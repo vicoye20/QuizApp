@@ -42,7 +42,7 @@
     filter: blur(40px);  
 }
 
-div{
+.div1{
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -68,4 +68,40 @@ h1{
     font-size: 3.5rem;
     margin-top: -50px;
     color: white;
+}
+
+input{
+    width: 300px;
+    height: 40px;
+    margin-top: 10px;
+    margin-left: 450px;
+    font-size: 18px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+    padding-left: 20px;
+    border-bottom-right-radius: 35px;
+    border-top-left-radius: 35px;
+    border-color: #00ff66;
+    color: blue;
+}
+
+button{
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    border: none;
+    font-size: 18px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+    color: darkblue;
+    background-color: white;
+    position: relative;
+    top: -40px;
+    left: 20px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+button:hover{
+    background-color: yellow;
 }
