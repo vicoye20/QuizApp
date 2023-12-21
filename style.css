@@ -2,7 +2,7 @@ body{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: aquamarine;
+    background-color: rgb(204, 221, 215);
 }
 
 .div1{
@@ -40,6 +40,15 @@ h1{
     font-size: 3.5rem;
     margin-top: -50px;
     color: darkblue;
+    animation: 1s beta ease-in-out infinite;
+}
+@keyframes beta{
+    0%{
+        opacity: 1;
+    }
+    50%{
+        color: rgb(255, 0, 0);
+    }
 }
 
 .inp1{
@@ -124,7 +133,7 @@ h1{
     }
 }
 
-main{
+#div2{
     display: none;
     width: 600px;
     height: 450px;
@@ -139,14 +148,31 @@ h2{
     color: darkblue;
     margin-top: 20px;
     text-decoration: underline;
+    animation: 1s bet ease-in-out infinite;
+}
+@keyframes bet{
+    0%{
+        opacity: 1;
+    }
+    50%{
+        color: deeppink;
+    }
 }
 
-.check{
-    height: 20px;
-    width: 20px;
-    position: relative;
-    top: 3px;
-    border: none;
+#ans{
+    background-color: white;
+    width: 500px;
+    height: 100%;
+    margin: auto;
+    border-radius: 25px;
+}
+
+h4{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.5rem;
+    color: darkblue;
+    text-align: center;
+    cursor: pointer;
 }
 
 #quest1{
@@ -157,11 +183,12 @@ h2{
     margin-top: -20px;
 }
 
-#ans{
-    text-align: center;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 1.5rem;
-    color: darkblue;
+#btns{
+    width: 500px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: auto;
 }
 
 .btn1{
@@ -169,7 +196,6 @@ h2{
     width: 90px;
     border-radius: 30px;
     border: none;
-    margin-left: 20px;
     font-size: 17px;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-weight: bold;
@@ -179,48 +205,7 @@ h2{
     transition: 1s;
 }
 
-.btn2{
-    height: 40px;
-    width: 90px;
-    border-radius: 30px;
-    border: none;
-    margin-left: 20px;
-    font-size: 17px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-weight: bold;
-    color: darkblue;
-    background-color: white;
-    cursor: pointer;
-    transition: 1s;
-}
-
-.btn3{
-    height: 40px;
-    width: 90px;
-    border-radius: 30px;
-    border: none;
-    margin-left: 460px;
-    margin-top: 40px;
-    font-size: 17px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-weight: bold;
-    color: darkblue;
-    background-color: white;
-    cursor: pointer;
-    transition: 1s;
-}
-
-.btn4{
-    height: 40px;
-    width: 90px;
-    border-radius: 30px;
-    border: none;
-    margin-left: 20px;
-    font-size: 17px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-weight: bold;
-    color: darkblue;
-    background-color: white;
-    cursor: pointer;
-    transition: 1s;
+.btn1:hover{
+    background-color: yellow;
+    color: black;
 }

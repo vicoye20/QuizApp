@@ -19,8 +19,8 @@
 
         <h1>Enter your name to start the Quiz!</h1>
 
-            <input class="inp1" type="Surname" placeholder="Surname" id="inp1"> <br>
-            <input class="inp1" type="Firstname" placeholder="Firstname" id="inp2"> 
+            <input class="inp1" type="Surname" placeholder="Surname " id="inp1"> <br>
+            <input class="inp1" type="Surname" placeholder="First name" id="inp2"> 
             <button class="btn" id="btn">Start Quiz</button>
 
             <main id="div2"> 
@@ -28,20 +28,23 @@
                 <h2>QUESTIONS</h2> 
                 <h3 id="quest1"> 1. What is the full meaning HTML? </h3> 
                 
-                <h4 id="ans">
-                    <input class="check" type="checkbox">(A.) Hyper Test Markup Language. <br> 
-                    <input class="check" type="checkbox">(B.) Hydro Text Markup Language. <br>
-                    <input class="check" type="checkbox">(C.) Hyper Text Markup Language. <br> 
-                    <input class="check" type="checkbox">(D.) Hypo Test Markup Languages. 
-                </h4>
-        
-                <button class="btn3" onclick="handleClick()">Restart</button>
-                
-                <button class="btn1" onclick="Previous()">Previous</button> 
-        
-                <button class="btn2" onclick="Next()">Next</button>
+                <div id="ans">
 
-                <button class="btn4" onclick="Submit()">Submit</button>
+                    <h4>(A.) Hyper Test Markup Language.</h4> 
+                    <h4>(B.) Hydro Text Markup Language.</h4>
+                    <h4>(C.) Hyper Text Markup Language. </h4> 
+                    <h4>(D.) Hypo Test Markup Languages. </h4>
+
+                </div>
+        
+                <div id="btns">
+
+                    <button class="btn1" onclick="handleClick()">Restart</button>                
+                    <button class="btn1" onclick="Previous()">Previous</button>       
+                    <button class="btn1" id="Next" onclick="Next()">Next</button>
+                    <button class="btn1" onclick="Submit()">Submit</button>
+
+                </div>
         
             </main>  
 
