@@ -100,7 +100,9 @@ document.getElementById("btn").addEventListener('click', function(){
         })
     }
 
-    
+    function a(){
+        document.getElementById('h4').style.backgroundColor = ('red')
+    }
 
 
 

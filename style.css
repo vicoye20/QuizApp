@@ -15,6 +15,15 @@ body{
 img{
     height: 250px;
     width: 250px;
+    animation: 1.5s bat ease-in-out;
+}
+@keyframes bat{
+    0%{
+       transform: translateX(1100px);
+    }
+    100%{
+        transform: translateX(0px);
+    }
 }
 
 p{
@@ -23,14 +32,15 @@ p{
     font-family: Georgia, 'Times New Roman', Times, serif;
     margin-left: -230px;
     color: green;
-    animation: 1s vic ease-in-out infinite;
+    animation: 1.5s vic ease-in-out;
 }
+
 @keyframes vic{
     0%{
-        opacity: 1;
+       transform: translateX(1100px);
     }
-    50%{
-        color: darkblue;
+    100%{
+        transform: translateX(0px);
     }
 }
 
@@ -40,6 +50,16 @@ h1{
     font-size: 3.5rem;
     margin-top: -50px;
     color: darkblue;
+    animation: 1.5s rate ease-in-out;
+}
+
+@keyframes rate{
+    0%{
+       transform: translateX(-1200px);
+    }
+    100%{
+        transform: translateX(0px);
+    }
 }
 
 
@@ -56,6 +76,15 @@ h1{
     border-top-left-radius: 35px;
     border-color: #00ff66;
     color: blue;
+    animation: 1.5s tray ease-in-out;
+}
+@keyframes tray{
+    0%{
+       transform: translateY(-1100px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
 }
 
 .btn{
