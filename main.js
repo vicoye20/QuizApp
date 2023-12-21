@@ -42,42 +42,42 @@ document.getElementById("btn").addEventListener('click', function(){
         {
             question : 'Question 3. Which of these following is not type of styling?',
             answers : ['(A) Grade Styling', '(B) Inline Styling', '(C) External Styling','(D) Internal Styling'],
-            correctAnswer : '(A) Grade Styling'
+            correctAnswer : 0
         },
         {
             question : 'Question 4. I buy 6 Eggs, I broke 2, I fried 2, I ate 2! How many Eggs remain?',
             answers : ['(A) 0','(B) 2', '(C) 4', '(D) 6'],
-            correctAnswer : '(D) 6'
+            correctAnswer : 2
         },
         {
             question : 'Question 5. Objects in JavaScript stores Properties in form of what & what?',
             answers : ['(A) Strings and Value', '(B) Key and Value', '(C) Key and Notes', '(D) Key and Strings'],
-            correctAnswer : '(B) Key and Value'
+            correctAnswer : 1
         },
         {
             question : 'Question 6. Who won 2021 UEFA Champions League?',
             answers : ['(A) Chelsea', '(B) Real Madrid', '(C) Manchester City', '(D) Bayern Munchen'],
-            correctAnswer : '(A) Chelsea'
+            correctAnswer : 0
         },
         {
             question : 'Question 7. The mass spectrometer can be used to measure mass of?',
             answers : ['(A) An electron', '(B) A Proton', '(C) A Neutron', '(D) An Atom'],
-            correctAnswer : '(D) An Atom'
+            correctAnswer : 3
         },
         {
             question : 'Question 8. What is the full meaning of HOF?',
             answers : ['(A) Hired Oxygen Float','(B) Hyper Ordered Function' ,'(C) Hired Ordered Function', '(D) Hyper Originated Function'],
-            correctAnswer : '(C) Hired Ordered Function'
+            correctAnswer : 2
         },
         {
             question : 'Question 9. Water molecules are held together by?',
             answers : ['(A) Covalent Bond', '(B) Hydrogen Bond', '(C) Ionic forces', '(D) Van Der Waal Forces'],
-            correctAnswer : '(B) Hydrogen Bond'
+            correctAnswer : 1
         },
         {
             question : 'Question 10. How many types of JavaScript do we have?',
             answers : ['(A) 3', '(B) 4', '(C) 5', '(D) 2'],
-            correctAnswer : '(D) 2'
+            correctAnswer : 3
         }
     ] 
 
@@ -99,7 +99,10 @@ document.getElementById("btn").addEventListener('click', function(){
            currentQuestion++
         })
     }
+
     
+
+
 
 
   
