@@ -123,6 +123,19 @@ h2{
     color: darkblue;
     margin-top: 20px;
     text-decoration: underline;
+    transition: 1s;
+    animation: 1s joy ease-in-out infinite;
+}
+@keyframes joy{
+    0%{
+        opacity: 1;
+    }
+    50%{
+        color: darkred;
+    }
+    100%{
+        color: teal
+    }
 }
 
 #ans{
