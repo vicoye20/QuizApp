@@ -81,28 +81,55 @@ document.getElementById("btn").addEventListener('click', function(){
         }
     ] 
 
-    let currentQuestion = 0
-    let previousQuestion = 0
-    let correctAnswer = 0
+    let currentQuestion = 0;
+    let selectedAnswers = [];
+    let correctAnswers = 0;
 
+    function loadQuestion() {
+      let questionText = document.getElementById("quest1");
+      questionText.textContent = questions[currentQuestion].question;
 
-    function Next(){
-        let questionText = document.getElementById('quest1')
-        questionText.textContent = questions[currentQuestion].question
+      let answers = document.querySelectorAll(".answer");
+      answers.forEach((answer, index) => {
+        answer.textContent = questions[currentQuestion].answers[index];
+        answer.style.backgroundColor = "";
+      });
 
-        let answer = document.querySelectorAll('.answer')
-        answer.forEach((answer, index) => {
-            answer.textContent = questions[currentQuestion].answers[index]
-        }) 
-
-        setTimeout(() => {
-           currentQuestion++
-        })
+      if (selectedAnswers[currentQuestion] !== undefined) {
+        answers[selectedAnswers[currentQuestion]].style.backgroundColor = "teal";
+      }
     }
 
-    function a(){
-        document.getElementById('h4').style.backgroundColor = ('red')
+    function selectAnswer(index) {
+      selectedAnswers[currentQuestion] = index;
+      let answers = document.querySelectorAll(".answer");
+      answers.forEach((answer, idx) => {
+        answer.style.backgroundColor = idx === index ? "yellow" : "";
+      });
     }
+
+    function Next() {
+      if (currentQuestion < questions.length - 1) {
+        currentQuestion++;
+        loadQuestion();
+      }
+    }
+
+    function Previous() {
+      if (currentQuestion > 0) {
+        currentQuestion--;
+        loadQuestion();
+      }
+    }
+
+    function Submit() {
+      correctAnswers = selectedAnswers.reduce((sum, answer, index) => {
+        return sum + (answer === questions[index].correctAnswer ? 1 : 0);
+      }, 0);
+      alert(`You got ${correctAnswers} out of ${questions.length} questions correct!`);
+    }
+
+    document.addEventListener('DOMContentLoaded', loadQuestion);
 
 
 

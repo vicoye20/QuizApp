@@ -2,7 +2,7 @@ body{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: rgb(204, 221, 215);
+    background-color: teal;
 }
 
 .div1{
@@ -29,9 +29,9 @@ img{
 p{
     font-size: 7rem;
     font-weight: bold;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     margin-left: -230px;
-    color: green;
+    color: whitesmoke;
     animation: 1.5s vic ease-in-out;
 }
 
@@ -46,10 +46,10 @@ p{
 
 h1{
     text-align: center;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 3.5rem;
     margin-top: -50px;
-    color: darkblue;
+    color: whitesmoke;
     animation: 1.5s rate ease-in-out;
 }
 
@@ -62,21 +62,25 @@ h1{
     }
 }
 
+section{
+    justify-content: space-evenly;
+    align-items: center;
+    display: flex;
+}
 
 .inp1{
     width: 300px;
     height: 40px;
     margin-top: 10px;
-    margin-left: 450px;
     font-size: 18px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: teal;
     font-weight: bold;
     padding-left: 20px;
-    border-bottom-right-radius: 35px;
-    border-top-left-radius: 35px;
-    border-color: #00ff66;
-    color: blue;
+    border: none;
+    border-radius: 30px;
     animation: 1.5s tray ease-in-out;
+    outline: none;
 }
 @keyframes tray{
     0%{
@@ -93,15 +97,13 @@ h1{
     border-radius: 50%;
     border: none;
     font-size: 18px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-weight: bold;
-    color: darkblue;
+    color: teal;
     background-color: white;
-    position: relative;
-    top: -40px;
-    left: 20px;
     cursor: pointer;
     transition: 1s;
+    outline: none;
 }
 
 .btn:hover{
@@ -118,28 +120,15 @@ h1{
 
 h2{
     text-align: center;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 4rem;
-    color: darkblue;
+    color: white;
     margin-top: 20px;
     text-decoration: underline;
-    transition: 1s;
-    animation: 1s joy ease-in-out infinite;
-}
-@keyframes joy{
-    0%{
-        opacity: 1;
-    }
-    50%{
-        color: darkred;
-    }
-    100%{
-        color: teal
-    }
 }
 
 #ans{
-    background-color: white;
+    background-color: teal;
     width: 500px;
     height: 100%;
     margin: auto;
@@ -147,16 +136,17 @@ h2{
 }
 
 h3{
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 2rem;
-    color: darkblue;
+    color: white;
+    margin-top: -40px;
     text-align: center;
 }
 
 h4{
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 1.5rem;
-    color: darkblue;
+    color: white;
     text-align: center;
     cursor: pointer;
 }
@@ -165,11 +155,10 @@ h4{
     margin: auto;
     margin-top: 50px;
     text-align: center;
-    background-color: rgba(255, 255, 255, 0.089);
+    background-color: teal;
     height: 100%;
     width: 80%;
     border-radius: 30px;
-    box-shadow: 0px 0px 80px 0px darkblue;
 }
 
 #btns{
@@ -186,9 +175,9 @@ h4{
     border-radius: 30px;
     border: none;
     font-size: 17px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-weight: bold;
-    color: darkblue;
+    color: teal;
     background-color: white;
     cursor: pointer;
     transition: 1s;
@@ -208,66 +197,79 @@ h4{
     }
 
     img{
-        width: 100px;
-        height: 100px;
-        margin-left: 0px;
+        display: none;
     }
 
     p{
-        font-size: 2.5rem;
+        font-size: 3rem;
         font-weight: bold;
-        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
         margin-left: -30px;
-        color: yellow;
+        text-align: center;
     }
 
     h1{
         text-align: center;
-        font-family: Georgia, 'Times New Roman', Times, serif;
-        font-size: 2.5rem;
-        margin-top: 20px;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-size: 2rem;
+        margin-top: -20px;
         color: white; 
+    }
+
+    section{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
     }
 
     .inp1{
         width: 220px;
         height: 40px;
-        margin-top: 10px;
-        margin-left: 20px;
+        margin-top: px;
+        margin-left: 0px;
         font-size: 18px;
-        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
         font-weight: bold;
         padding-left: 20px;
-        border-bottom-right-radius: 35px;
-        border-top-left-radius: 35px;
-        border-color: #00ff66;
-        color: blue;
+        color: teal;
     }
-
+    .btn{
+        height: 70px;
+        width: 70px;
+        border-radius: 30%;
+        border: none;
+        font-size: 18px;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-weight: bold;
+        color: teal;
+        background-color: white;
+        cursor: pointer;
+        transition: 1s;
+        margin-top: 15px;
+    }
     .quest1{
         margin: auto;
         margin-top: 50px;
         text-align: center;
-        font-family: Georgia, 'Times New Roman', Times, serif;
-        color: darkblue;
-        background-color: rgba(255, 255, 255, 0.089);
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        color: white;
+        background-color: teal;
         height: 100%;
         width: 100%;
-        border-radius: 30px;
-        box-shadow: 0px 0px 80px 0px;
         }
 
         h2{
             text-align: center;
-            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
             font-size: 2rem;
-            color: darkblue;
+            color: white;
             margin-top: 50px;
             text-decoration: underline;
         }
 
         #ans{
-            background-color: white;
+            background-color: teal;
             width: 300px;
             height: 100%;
             margin: auto;
@@ -283,18 +285,33 @@ h4{
         }
 
         h3{
-            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
             font-size: 1.4rem;
-            color: darkblue;
+            color: white;
             text-align: center;
+            margin-top: 20px;
         }
 
         h4{
-            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
             font-size: 1rem;
-            color: darkblue;
+            color: white;
             text-align: center;
             cursor: pointer;
+        }
+        .btn1{
+            height: 40px;
+            width: 90px;
+            border-radius: 30px;
+            border: none;
+            font-size: 17px;
+            font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-weight: bold;
+            color: teal;
+            background-color: white;
+            cursor: pointer;
+            transition: 1s;
+            margin-left: 10px;
         }
 
 }

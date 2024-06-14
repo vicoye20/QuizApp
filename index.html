@@ -19,42 +19,36 @@
 
         <h1>Enter your name to start the Quiz!</h1>
 
-            <input class="inp1" type="Surname" placeholder="Surname " id="inp1"> <br>
-            <input class="inp1" type="Surname" placeholder="First name" id="inp2"> 
-            <button class="btn" id="btn">Start Quiz</button>
+            <section>
+                <input class="inp1" type="Surname" placeholder="Surname " id="inp1"> 
+                <input class="inp1" type="Surname" placeholder="First name" id="inp2"> 
+                <button class="btn" id="btn">Start Quiz</button>
+            </section>
 
-            <main id="div2"> 
-
+            <main id="div2" style="display:none;">
                 <div class="quest1">
-
-                    <h2>QUESTIONS</h2>
-
-                    <h3 id="quest1">
-                        You have 10 Questions to answer! <br>
-                        And You have Four Options
-                    </h3> 
-
-                <div id="ans">
-                    
-                    <h4 id="h4" class="answer" onclick="a()">OPTION (A.) </h4> 
-                    <h4 id="h4" class="answer" onclick="b()">OPTION (B.) </h4>
-                    <h4 id="h4" class="answer" onclick="c()">OPTION (C.)  </h4> 
-                    <h4 id="h4" class="answer" onclick="d()">OPTION (D.) </h4>
-
-                </div>
-        
-                <div id="btns">
-
-                    <button class="btn1" onclick="handleClick()">Restart</button>                
-                    <button class="btn1" onclick="Previous()">Previous</button>       
+                  <h2>QUESTIONS</h2>
+          
+                  <h3 id="quest1">
+                    You have 10 Questions to answer! <br />
+                    And You have Four Options.
+                  </h3>
+          
+                  <div id="ans">
+                    <h4 class="answer" onclick="selectAnswer(0)">OPTION (A.)</h4>
+                    <h4 class="answer" onclick="selectAnswer(1)">OPTION (B.)</h4>
+                    <h4 class="answer" onclick="selectAnswer(2)">OPTION (C.)</h4>
+                    <h4 class="answer" onclick="selectAnswer(3)">OPTION (D.)</h4>
+                  </div>
+          
+                  <div id="btns">
+                    <button class="btn1" onclick="handleClick()">Restart</button>
+                    <button class="btn1" onclick="Previous()">Previous</button>
                     <button class="btn1" id="Next" onclick="Next()">Next</button>
                     <button class="btn1" onclick="Submit()">Submit</button>
-
+                  </div>
                 </div>
-
-                </div>
-        
-            </main>  
+              </main>
 
           
 
