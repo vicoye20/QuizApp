@@ -1,63 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>QUIZ APP</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-
-    
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <div id="div1">
-        <div class="div1">
+      <div class="div1">
+        <img src="image/google-contacts.png" alt="" />
+        <p>QUIZ APP</p>
+      </div>
 
-            <img src="image/google-contacts.png" alt="">
-            <p> QUIZ APP</p>
+      <h1>Enter your name to start the Quiz!</h1>
 
+      <section>
+        <input class="inp1" type="text" placeholder="Surname" id="inp1" />
+        <input class="inp1" type="text" placeholder="First name" id="inp2" />
+        <button class="btn" id="btn">Start Quiz</button>
+      </section>
+
+      <main id="div2" style="display: none">
+        <div class="quest1">
+          <h2>QUESTIONS</h2>
+
+          <h3 id="quest1">
+            You have 10 Questions to answer! <br />
+            And You have Four Options.
+          </h3>
+
+          <div id="ans">
+            <h4 class="answer" onclick="selectAnswer(0)">OPTION (A.)</h4>
+            <h4 class="answer" onclick="selectAnswer(1)">OPTION (B.)</h4>
+            <h4 class="answer" onclick="selectAnswer(2)">OPTION (C.)</h4>
+            <h4 class="answer" onclick="selectAnswer(3)">OPTION (D.)</h4>
+          </div>
+
+          <div id="btns">
+           
+            <button class="btn1" onclick="Previous()">Previous</button>
+            <button class="btn1" id="Next" onclick="Next()">Next</button>
+            <button class="btn1" onclick="Submit()">Submit</button>
+          </div>
         </div>
 
-        <h1>Enter your name to start the Quiz!</h1>
-
-            <section>
-                <input class="inp1" type="Surname" placeholder="Surname " id="inp1"> 
-                <input class="inp1" type="Surname" placeholder="First name" id="inp2"> 
-                <button class="btn" id="btn">Start Quiz</button>
-            </section>
-
-            <main id="div2" style="display:none;">
-                <div class="quest1">
-                  <h2>QUESTIONS</h2>
+        <section id="secs" style="display: none;">
+          <div id="result" style="display: none;"></div>
+          <div style="margin: auto; margin-top: -130px;">
+            <button class="btn2" onclick="handleClick()">Restart</button>
+          </div>
           
-                  <h3 id="quest1">
-                    You have 10 Questions to answer! <br />
-                    And You have Four Options.
-                  </h3>
-          
-                  <div id="ans">
-                    <h4 class="answer" onclick="selectAnswer(0)">OPTION (A.)</h4>
-                    <h4 class="answer" onclick="selectAnswer(1)">OPTION (B.)</h4>
-                    <h4 class="answer" onclick="selectAnswer(2)">OPTION (C.)</h4>
-                    <h4 class="answer" onclick="selectAnswer(3)">OPTION (D.)</h4>
-                  </div>
-          
-                  <div id="btns">
-                    <button class="btn1" onclick="handleClick()">Restart</button>
-                    <button class="btn1" onclick="Previous()">Previous</button>
-                    <button class="btn1" id="Next" onclick="Next()">Next</button>
-                    <button class="btn1" onclick="Submit()">Submit</button>
-                  </div>
-                </div>
-              </main>
-
-          
-
+        </section>
         
+      </main>
     </div>
-    
 
-        <script src="main.js">
-
-        </script>
-</body>
+    <script src="main.js">
+     
+    </script>
+  </body>
 </html>
